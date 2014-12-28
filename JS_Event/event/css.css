@@ -1,0 +1,12 @@
+.div{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+}
+/*          //scale(w倍数,h倍数)*/
+.animation{
+    -webkit-transform:translate(100px,100px) rotate(30deg) scale(2,2);
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}

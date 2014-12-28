@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>测试事件</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style type="text/css">
+        .abc {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">按钮</button>
+<div class="div" onmouseout="mouseOut(this)" onmouseover="mouseOver(this,'.animation')">
+    <script>
+        function mouseOver(ooj){
+            ooj.innerHTML = "Hello~";
+        }
+        function mouseOut(ooj,style){
+            ooj.innerHTML = "Bye~";
+            ooj.setAttribute("class", "animation");             //方法1
+            ooj.className = "animation";                        //方法2
+        }
+    </script>
+    <script>
+        var btn1 = document.getElementById("btn");
+        btn1.addEventListener("click", demo1);
+        btn1.addEventListener("click", demo2);
+        function demo1(){
+            alert("event1")
+        };
+        function demo2(){
+            alert("event2")
+        };
+    </script>
+</div>
+</body>
+</html>

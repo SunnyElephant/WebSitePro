@@ -1,0 +1,41 @@
+p{
+    background-image: url("justwe2.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: 500px 500px;
+    border: dotted;
+}
+
+p{
+    width: 150px ;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+#classid{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #ffccff;
+    border-image: url("justwe2.jpg");
+}
+
+body{
+    margin: 5px;
+}
+
+.container{
+    margin: 30px;
+}
+.bd{
+border-style: dashed;
+}
+.pd{
+padding: 30px;
+}
+.content{
+background-color: #ffccff;
+}

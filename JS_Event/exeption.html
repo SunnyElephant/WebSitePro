@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>测试异常</title>
+</head>
+<body>
+<input id="txt" type="text">
+<input id="btn_commit" type="button" onclick="commit()" value="提交">
+<script>
+    function commit(){
+        try{
+            if(document.getElementById("txt").value == ""){
+                throw "请输入内容~";                             //这句会把错误信息写入err，并进入catch
+            }else{
+                document.write("提交成功~！");
+            }
+        }catch (err){
+            alert(err);                                             //把throw里面写入的错误信息用警告框的方式输出
+        }
+
+    }
+</script>
+</body>
+</html>

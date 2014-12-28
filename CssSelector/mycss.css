@@ -1,0 +1,6 @@
+h1 strong{
+    color: aqua;
+}
+p > strong{
+    color: aqua;
+}

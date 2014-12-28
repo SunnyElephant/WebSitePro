@@ -1,0 +1,19 @@
+h1,h2,a{
+    color: blueviolet;
+}
+body{
+    color: blue;
+}
+
+#pid{
+    color: brown;
+}
+
+#divid{
+    color: aquamarine;
+}
+
+.pclass{
+    color: bisque;
+    font-size: large;
+}

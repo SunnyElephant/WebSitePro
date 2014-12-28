@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="divid">
+    <button onclick="createButton()">动态添加按钮(后)</button>
+    <button onclick="createButtonBefore('divid')">动态添加按钮(前)</button>
+    <button onclick="removeButton()">动态删除按钮</button>
+</div>
+<script>
+    var num = 0;
+    function createButton(){
+        ++num;
+        var body = document.body;
+        var input = document.createElement("input");
+        input.type = "button";
+        input.value = "动态按钮"
+        input.id = num;
+        body.appendChild(input);            //往后面插入
+    }
+    function createButtonBefore(id){
+        var body = document.body;
+        var input = document.createElement("input");
+        var before = document.getElementById(id);
+        input.type = "button";
+        input.value = "动态按钮"
+        body.insertBefore(input, before);
+    }
+
+    function removeButton(){
+        var div = document.getElementById("divid");
+        var obj = document.getElementById(num);
+        --num;
+        obj.parentNode.removeChild(obj);
+    }
+
+    function getSize(){
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        alert(width + "," + height);
+    }
+    getSize();
+    window.open();
+</script>
+</body>
+</html>

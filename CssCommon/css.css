@@ -1,0 +1,50 @@
+.divclass{
+    width: 75%;
+    height: 1000px;
+    background-color: red;
+    margin: 100px auto;
+}
+body{
+margin: 0px;
+}
+
+.p1{
+    width: 400px;
+    line-height: normal;
+    background-color: antiquewhite;
+}
+.p2{
+    width: 400px;
+    line-height: 200%;
+    background-color: azure;
+}
+.p3{
+    width: 400px;
+    line-height: 50%;
+    background-color: aquamarine;
+}
+a:link, a:visited{
+    text-decoration: none;
+    background-color: aqua;
+    color: blueviolet;
+    width: 50px;
+    text-align: center;
+}
+a:active, a:hover{
+    background-color: red;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+    text-align: center;
+}
+li{
+    display: inline;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 25%;
+}
